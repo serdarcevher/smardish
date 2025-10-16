@@ -1,0 +1,257 @@
+<html lang="tr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>SmarDish'te ne var ne yok? En son eklenenlerle ilgili bilgi alın.</title>
+	<style>
+		html,
+		body {
+			height: 100%;
+		}
+
+		a { color:white; }
+
+		body {
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			background-color: #fa4a0c;
+			font-family: 'Poppins', sans-serif;
+			color: white;
+		}
+
+		#main {
+			background-image: url("../assets/back.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			padding: 0;
+			padding-top:80px;
+			margin: 0;
+			width: 100%;
+			max-width: 690px;
+			height: 100%;
+			max-height: 844px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#content {
+			width: 100%;
+			height: auto;
+			position: relative;
+			margin-top: 0;
+  			margin-bottom: auto;
+		}
+
+		#subtext {
+			width: 140px;
+			height: 30px;
+			position: absolute;
+			bottom: -25px;
+			right: -16px;
+		}
+
+		#subtext a {
+			color: white;
+		}
+
+		#content {
+			position: relative;
+			margin-top: -40px;
+			margin-bottom:40px;
+		}
+
+		.text-on-half-transparent-bg {
+			background: rgba(0, 0, 0, 0.3);
+			padding: 16px;
+			box-sizing: border-box;
+			color: white;
+			border-radius:10px;
+		}
+
+		.promotional_text {
+			width: 100%;
+			font-size: 14px;
+			padding-top:20px;
+			padding-bottom:20px;
+		}
+
+		@media (min-width:500px) {
+			.promotional_text {
+				font-size: 15px;
+			}
+		}
+
+		#footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			height: 40px;
+			line-height: 40px;
+			font-size: 12px;
+			background: rgba(0, 0, 0, 0.3);
+		}
+
+		#footer,
+		#footer a {
+			color: rgba(255, 255, 255, 0.7);
+		}
+
+		.mobile-linebreak {
+			display: none;
+		}
+
+		.desktop-separator {
+			display: inline-block;
+		}
+
+		@media (max-width:580px) {
+			.mobile-linebreak {
+				display: block;
+			}
+
+			.desktop-separator {
+				display: none;
+			}
+
+			#footer {
+				box-sizing: border-box;
+				height: 80px;
+				padding-top: 10px;
+				line-height: 30px;
+			}
+		}
+
+		.header {
+			width:100%;font-size:20px;margin-bottom:20px;
+		}
+
+		#creators-container {
+			padding:10px;
+			display:flex;
+			align-items: center;
+			justify-content: center;
+			box-sizing: border-box;
+			width: 100%;
+		}
+
+		.flex-gap {
+			display: inline-flex;
+			flex-wrap: wrap;
+		}
+
+		.flex-gap > div {
+			margin-left:4%;
+			margin-right: 4%;
+			margin-top: 4%;
+		}
+
+		@media (max-width: 580px) {
+			.flex-gap > div {
+				margin-top:10%;
+			}
+		}
+
+		.flex-break {
+			flex-basis: 100%;
+			height: 0;
+		}
+
+		.profile {
+			width: 100px;
+			height:100px;
+			border-radius:50%;
+			background-color:orange;
+			border: 2px solid white;
+		}
+
+		.profile img {
+			width:100%;
+			border-radius:50%;
+		}
+
+		.profile .name {
+			width:120px;
+			left:-10px;
+			position:relative;
+			background: rgba(0, 0, 0, 0.1);
+			padding:2px;
+			font-size:12px;
+			color:white;
+			border-radius:10px;
+			white-space: nowrap;
+		}
+
+		.profile .name .role {
+			font-size:10px;
+		}
+
+		ul.news li:not(:last-child) { 
+			margin-bottom: 10px;  
+		}
+
+
+	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="main">
+
+		<div id="content">
+			<div class="promotional_text text-on-half-transparent-bg">
+				(For English click <a href="../whatsnew/">here</a>)
+				<br /><br />
+
+				Belli standartlara sahip, kaliteli bir içeriği, güzel bir tasarıma sahip kullanışlı bir araçla birleştirmek için çok çalışıyoruz. Potansiyelimizin farkındayız ve eksik özellikleri tamamlamak için elimizden gelenin en iyisini yapıyoruz. Son eklenenler ve yol haritamızdakiler hakkında güncel bilgi almak için bizi takip etmeye devam edin.</div>
+
+			<div class="promotional_text text-on-half-transparent-bg" style="margin-top:20px;padding-bottom:50px;">
+
+				<div class="header">
+					NE VAR NE YOK?
+				</div>
+
+				<ul class="news">
+					<li>23 Eylül 2024: Tariflerin malzemelerinizle uyum oranını gösteren yeni sürümümüz yayımlandı.</li>
+					<li>29 Mart, 2024: Apple ve Google ile giriş düzeltildi.</li>
+					<li>1 Haziran, 2023: Veritabanımız yüzlerce yeni tarifle güçlendirildi.</li>
+					<li>3 Aralık, 2022: Uygulama App Store'da yayına girdi.</li>
+					<li>20 Ekim 2022: Dinamik çeviri motoru çalışmaya başladı. Özgün Türkçe içeriğimiz otomatik olarak çevrilmekte ve editörlerimiz tarafından manuel olarak kontrol edilmektedir. Ciddi bir çeviri hatasına rastlarsanız bildirmek için lütfen bizimle iletişime geçin, böylece sorunu hızlıca düzeltebiliriz.</li>
+					<li>1 Eylül 2022: İlk beta sürüm yayımlandı.</li>
+				</ul>
+
+				</div>
+			</div>
+
+			<div class="promotional_text text-on-half-transparent-bg" style="margin-bottom:200px;">
+				<div class="header">
+					YOL HARİTASI
+				</div>
+				<ul class="news">
+					<li>Alışveriş önerileri</li>
+					<li>Dinamik porsiyon - değer adaptasyonu</li>
+					<li>Dinamik kalori hesaplama</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="footer">
+			Copyright © Serdar Cevher. All Rights Reserved.
+			<div class="desktop-separator">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
+			<div class="mobile-linebreak"></div>
+			<a href="/tr">Giriş</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="/hizmet-sartlari/">Hizmet Şartları</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="/gizlilik-sozlesmesi/">Gizlilik Sözleşmesi</a>
+		</div>
+	</div>
+
+</body>
+
+</html>

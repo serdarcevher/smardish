@@ -1,0 +1,297 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:image" content="https://smardish.com/assets/smardish-brand-logo.png" />
+	<link rel="stylesheet" href="devices.min.css" type="text/css">
+	<title>SmarDish: Discover Recipes to Cook with Your Ingredients – Featuring Turkish & Greek Cuisine Recommendations</title>
+	<meta description="Find personalized recipes based on the ingredients in your fridge. Enjoy Mediterranean-inspired dishes from Turkish & Greek cuisines, perfect for a healthy diet." />
+	<style>
+		html,
+		body {
+			height: 100%;
+		}
+
+		body {
+			margin: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #fa4a0c;
+			font-family: 'Poppins', sans-serif;
+			color: white;
+		}
+
+		#main {
+			background-image: url("assets/back.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			max-width: 690px;
+			height: 100%;
+			max-height: 844px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		#logo {
+			width: 190px;
+			height: 139px;
+			background-image: url("assets/smardish-logo.png");
+			background-size: 100% auto;
+			position: relative;
+		}
+
+		#content {
+			width: 100%;
+			height: auto;
+			position: relative;
+		}
+
+		#subtext {
+			width: 140px;
+			height: 30px;
+			position: absolute;
+			bottom: -25px;
+			right: -16px;
+		}
+
+		#subtext a {
+			color: white;
+		}
+
+		#content {
+			position: relative;
+			margin-top: 40px;
+		}
+
+		.text-on-half-transparent-bg {
+			background: rgba(0, 0, 0, 0.3);
+			padding: 10px;
+			box-sizing: border-box;
+			color: white;
+			border-radius:10px;
+		}
+
+		#left_promotional_text {
+			width: 100%;
+			max-width:300px;
+			position:absolute;
+			left:-300px;
+			top:-150px; 
+			text-align: center;
+			font-size: 14px;
+		}
+
+		#promotional_text {
+			width: 100%;
+			text-align: center;
+			font-size: 14px;
+		}
+
+		@media (min-width:500px) {
+			#promotional_text {
+				font-size: 15px;
+			}
+		}
+
+		#badges_container {
+			width: 320px;
+			height: 60px;
+			position: absolute;
+			bottom: -100px;
+			left: -58px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			/*animation: animateHeart 1.2s infinite;*/
+		}
+		
+		#badges_container img {
+			height: 46px;
+		}
+
+		#device-look {
+			position:absolute;
+			width:320px;
+			top:-400px;
+			right:-400px;
+			transform: scale(0.75);
+		}
+
+		/*
+		@keyframes animateHeart {
+			0% {
+				transform: scale(0.8);
+			}
+			20% {
+				transform: scale(0.9);
+			}
+			40% {
+				transform: scale(0.8);
+			}
+			50% {
+				transform: scale(1);
+			}
+			100% {
+				transform: scale(0.8);
+			}
+		}
+		*/
+
+		#footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			height: 40px;
+			line-height: 40px;
+			font-size: 12px;
+			background: rgba(0, 0, 0, 0.3);
+		}
+
+		#footer,
+		#footer a {
+			color: rgba(255, 255, 255, 0.7);
+		}
+
+		.mobile-linebreak {
+			display: none;
+		}
+
+		.desktop-separator {
+			display: inline-block;
+		}
+
+		@media (min-width: 979px) and (max-width: 1100px) {
+			#device-look {
+				right:-350px;
+			}
+			#left_promotional_text {
+				left:-250px;
+			}
+		}
+
+		@media (max-width: 978px) {
+			#logo {
+				top:-200px;
+			}
+			#left_promotional_text {
+				position:relative;
+				left:-40px;
+				top:250px;
+				width:280px;
+				max-width:320px;
+			}
+
+			#device-look {
+				position:relative;
+				top:150px;
+				right:auto;
+				left:-100px;
+				padding-bottom:120px;
+			}
+		}
+
+		@media (max-width:580px) {
+			.mobile-linebreak {
+				display: block;
+			}
+
+			.desktop-separator {
+				display: none;
+			}
+
+			#footer {
+				box-sizing: border-box;
+				height: 80px;
+				padding-top: 10px;
+				line-height: 30px;
+			}
+		}
+
+
+	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="main">
+
+		<div id="logo">
+
+			<div id="left_promotional_text" class="text-on-half-transparent-bg">
+				Discover delicious recipes tailored to the ingredients you already have at home.
+				<br /><br />
+				Explore a variety of well-organized <i>Greek</i> and <i>Turkish</i> dishes, perfect for a healthy Mediterranean diet.
+				<br /><br />
+				Reduce food waste while enjoying authentic Mediterranean flavors.
+			</div>
+			
+
+			<div id="device-look">
+				<div class="marvel-device iphone-x">
+					<div class="notch">
+						<div class="camera"></div>
+						<div class="speaker"></div>
+					</div>
+					<div class="top-bar"></div>
+					<div class="sleep"></div>
+					<div class="bottom-bar"></div>
+					<div class="volume"></div>
+					<div class="overflow">
+						<div class="shadow shadow--tr"></div>
+						<div class="shadow shadow--tl"></div>
+						<div class="shadow shadow--br"></div>
+						<div class="shadow shadow--bl"></div>
+					</div>
+					<div class="inner-shadow"></div>
+					<div class="screen">
+						<img src="assets/app-preview.gif" style="width:100%;" />
+					</div>
+				</div>
+			</div>
+
+			<div id="subtext">by <a target="_blank" href="https://tarifmotoru.com">Tarifmotoru</a></div>
+
+			<div id="badges_container">
+				<a target="_blank" href="https://apps.apple.com/tr/app/smardish/id1638732483?l=en">
+					<img class="apple-badge" src="assets/store-badges/apple_en_badge.png" />
+				</a>
+
+				<a target="_blank" href="https://play.google.com/store/apps/details?id=com.serdarcevher.smardish">
+					<img class="google-badge" src="assets/store-badges/google_en_badge.png" />
+				</a>
+			</div>
+		</div>
+
+		<div id="content">
+			<!--<div id="promotional_text" class="text-on-half-transparent-bg">
+				Make use of all your ingredients in the fridge. Well-organized and categorized recipes filtered and
+				prioritized by your fridge content and what you have on hand.
+			</div>-->
+		</div>
+
+		<div id="footer">
+			Copyright © Serdar Cevher. All Rights Reserved.
+			<div class="desktop-separator">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
+			<div class="mobile-linebreak"></div>
+			<a href="/about/">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="/terms-of-service/">Terms of Service</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="/privacy-policy/">Privacy Policy</a>
+		</div>
+	</div>
+
+</body>
+
+</html>

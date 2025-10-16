@@ -1,0 +1,312 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:image" content="https://smardish.com/assets/smardish-brand-logo.png" />
+
+	<title>About SmarDish, the smart recipe finder based on ingredients</title>
+	<style>
+		html,
+		body {
+			height: 100%;
+		}
+		a { color:white; }
+
+		body {
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			background-color: #fa4a0c;
+			font-family: 'Poppins', sans-serif;
+			color: white;
+		}
+
+		#main {
+			background-image: url("../assets/back.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			padding: 0;
+			padding-top:80px;
+			margin: 0;
+			width: 100%;
+			max-width: 690px;
+			height: 100%;
+			max-height: 844px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#content {
+			width: 100%;
+			height: auto;
+			position: relative;
+			margin-top: 0;
+  			margin-bottom: auto;
+		}
+
+		#subtext {
+			width: 140px;
+			height: 30px;
+			position: absolute;
+			bottom: -25px;
+			right: -16px;
+		}
+
+		#subtext a {
+			color: white;
+		}
+
+		#content {
+			position: relative;
+			margin-top: -40px;
+			margin-bottom:40px;
+		}
+
+		.text-on-half-transparent-bg {
+			background: rgba(0, 0, 0, 0.3);
+			padding: 10px;
+			box-sizing: border-box;
+			color: white;
+			border-radius:10px;
+		}
+
+		.promotional_text {
+			width: 100%;
+			text-align: center;
+			font-size: 14px;
+			padding-top:20px;
+			padding-bottom:20px;
+		}
+
+		@media (min-width:500px) {
+			.promotional_text {
+				font-size: 15px;
+			}
+		}
+
+		#footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			height: 40px;
+			line-height: 40px;
+			font-size: 12px;
+			background: rgba(0, 0, 0, 0.3);
+		}
+
+		#footer,
+		#footer a {
+			color: rgba(255, 255, 255, 0.7);
+		}
+
+		.mobile-linebreak {
+			display: none;
+		}
+
+		.desktop-separator {
+			display: inline-block;
+		}
+
+		@media (max-width:580px) {
+			.mobile-linebreak {
+				display: block;
+			}
+
+			.desktop-separator {
+				display: none;
+			}
+
+			#footer {
+				box-sizing: border-box;
+				height: 80px;
+				padding-top: 10px;
+				line-height: 30px;
+			}
+		}
+
+		.header {
+			text-align:center;width:100%;font-size:20px;margin-bottom:20px;
+		}
+
+		#creators-container {
+			padding:10px;
+			padding-left:30px;
+			display:flex;
+			align-items: center;
+			justify-content: center;
+			box-sizing: border-box;
+			width: 100%;
+		}
+
+		.flex-gap {
+			display: inline-flex;
+			flex-wrap: wrap;
+		}
+
+		.flex-gap > div {
+			margin-left:4%;
+			margin-right: 4%;
+			margin-top: 4%;
+		}
+
+		@media (max-width: 580px) {
+			.flex-gap > div {
+				margin-top:10%;
+			}
+		}
+
+		.flex-break {
+			flex-basis: 100%;
+			height: 0;
+		}
+
+		.profile img {
+			width:100%;
+			border-radius:50%;
+		}
+
+		.profile .name {
+			width:120px;
+			left:-10px;
+			position:relative;
+			background: rgba(0, 0, 0, 0.1);
+			padding:2px;
+			font-size:14px;
+			color:white;
+			border-radius:10px;
+			white-space: nowrap;
+		}
+
+		.profile .name .role {
+			font-size:10px;
+		}
+
+		#badges_container {
+			margin-top: 20px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			/*animation: animateHeart 1.2s infinite;*/
+		}
+		
+		#badges_container img {
+			height: 46px;
+		}
+
+
+	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="main">
+
+		<div id="content">
+			<div class="promotional_text text-on-half-transparent-bg">
+
+				<div class="header">
+					ABOUT
+				</div>
+
+				(Türkçe için <a href="../hakkinda/">buraya</a> tıklayın)
+				<br /><br />
+				<a href="/">SmarDish</a> is an ingredient based recipe finder, mostly focusing on Greek - Turkish cuisines for a Mediterranean diet. You select what you already have as vegetables, legumes, dairy products etc. and our system will provide you with our suggestions to prepare or cook.
+				<br /><br />
+				All our content is crafted by our editors, checked and updated regularly. You can save your favorite recipes, and in case you have a few missing ingredients, you can add them into your shopping list.
+				<br /><br />
+				We are a small team of food enthusiasts, and we are always open to your feedback and suggestions. Please feel free to contact us for any inquiries.
+			</div>
+
+			<div id="badges_container">
+				<a target="_blank" href="https://apps.apple.com/tr/app/smardish/id1638732483?l=en">
+					<img class="apple-badge" src="../assets/store-badges/apple_en_badge.png" />
+				</a>
+
+				<a target="_blank" href="https://play.google.com/store/apps/details?id=com.serdarcevher.smardish">
+					<img class="google-badge" src="../assets/store-badges/google_en_badge.png" />
+				</a>
+			</div>
+
+			<div class="promotional_text text-on-half-transparent-bg" style="margin-top:20px;padding-bottom:50px;margin-bottom:20px;">
+
+				<div class="header">
+					SMARDISH TEAM
+				</div>
+
+				<div id="creators-container" class="flex-gap">
+					<div class="profile">
+						<div class="name">
+							Bilge Talgar
+							<div class="role">Content Creator</div>
+						</div>
+					</div>
+					<div class="profile" style="margin-top:-20px;">
+						<div class="name">
+							Serdar Cevher
+							<div class="role">Founder, Backend</div>
+						</div>
+					</div>
+					<div class="profile">
+						<div class="name">
+							Büşra Biçen
+							<div class="role">Content Engineering</div>
+						</div>
+					</div>
+					<div class="flex-break"></div>
+
+					<div class="profile">
+						<div class="name">
+							Betül Üsküdar
+							<div class="role">App Design</div>
+						</div>
+					</div>
+
+					<div class="profile">
+						<div class="name">
+							Ömer Faruk Meral
+							<div class="role">App Development</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="promotional_text text-on-half-transparent-bg" style="margin-bottom:100px;">
+				<div id="contact" class="header">
+					CONTACT
+				</div>
+
+				To contact us, please drop a line to <a href="mailto:smardishapp@gmail.com" style="color:white;">smardishapp@gmail.com</a> 
+			</div>
+		</div>
+
+		<div id="footer">
+			Copyright © Serdar Cevher. All Rights Reserved.
+			<div class="desktop-separator">&nbsp;&nbsp;|&nbsp;&nbsp;</div>
+			<div class="mobile-linebreak"></div>
+			<a href="/">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="/terms-of-service/">Terms of Service</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="/privacy-policy/">Privacy Policy</a>
+		</div>
+	</div>
+
+	<script>
+		if (window.location.href.indexOf('#') == 0) {
+			let hash = window.location.href.split('#')[1];
+			let hashTop = document.querySelector(`#${hash}`).offsetTop;
+			window.scrollTop = hashTop;
+		}
+	</script>
+
+</body>
+
+</html>
